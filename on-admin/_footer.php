@@ -4,6 +4,7 @@
   </div>
   <strong>Copyright &copy; 2017 - <a href="http://asia.ac.id" target="_blank">STMIK ASIA Malang</a></strong>
 </footer>
+</div>
 <!-- ./wrapper -->
 
 <!-- date-range-picker -->

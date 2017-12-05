@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "../config.php";
 include "_privileges.php";
 ?>
@@ -11,7 +11,7 @@ function dateformat($date){
   $bulan = substr($date, 5, 2);
   $tgl   = substr($date, 8, 2);
 
-  $result = $tgl . " " . $BulanIndo[(int)$bulan-1] . " ". $tahun;   
+  $result = $tgl . " " . $BulanIndo[(int)$bulan-1] . " ". $tahun;
   return($result);
 }
 ?>
@@ -53,11 +53,11 @@ function dateformat($date){
     var key, keychar;
     key = getkey(e);
     if (key == null) return true;
-    
+
     keychar = String.fromCharCode(key);
     keychar = keychar.toLowerCase();
     goods = goods.toLowerCase();
-    
+
 // check goodkeys
 if (goods.indexOf(keychar) != -1)
   return true;
@@ -115,7 +115,7 @@ return false;
          <img src="<?php print $root; ?>img/img-admin/<?php print $_SESSION['foto']; ?>" class="img-circle">
 
          <p>
-          <?php print $_SESSION['nama']; ?> 
+          <?php print $_SESSION['nama']; ?>
           <small><?php print $_SESSION['username']; ?></small>
         </p>
       </li>

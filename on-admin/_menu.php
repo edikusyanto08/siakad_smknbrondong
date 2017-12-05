@@ -35,7 +35,7 @@
       <li><a href="<?php print $root; ?>admin/ekstra"><i class="fa fa-circle-o"></i> Setting Ekstrakurikuler</a></li>
       <li><a href="<?php print $root; ?>admin/sikap"><i class="fa fa-circle-o"></i> Setting Sikap</a></li>
       <li><a href="<?php print $root; ?>admin/data-sekolah"><i class="fa fa-circle-o"></i> Setting Data Sekolah</a></li>
-      <li><a href="<?php print $root; ?>admin/kalender-akademik"><i class="fa fa-circle-o"></i> Setting Kalender Akademik</a></li>            
+      <li><a href="<?php print $root; ?>admin/kalender-akademik"><i class="fa fa-circle-o"></i> Setting Kalender Akademik</a></li>
     </ul>
   </li>
 

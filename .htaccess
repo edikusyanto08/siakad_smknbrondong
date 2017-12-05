@@ -30,10 +30,10 @@ RewriteRule ^admin/student/view$ on-admin/siswa-detail.php
 RewriteRule ^admin/student/view/$ on-admin/siswa-detail.php
 
 RewriteRule ^admin/student/update$ on-admin/siswa-edit.php
-RewriteRule ^admin/student/update/$ on-admin/siswa-edit.php 
+RewriteRule ^admin/student/update/$ on-admin/siswa-edit.php
 
 RewriteRule ^admin/student/export-xls$ on-admin/siswa-exportxls.php
-RewriteRule ^admin/student/export-xls/$ on-admin/siswa-exportxls.php 
+RewriteRule ^admin/student/export-xls/$ on-admin/siswa-exportxls.php
 
 RewriteRule ^admin/student/import-xls$ on-admin/siswa-importxls.php
 RewriteRule ^admin/student/import-xls/$ on-admin/siswa-importxls.php
@@ -101,6 +101,9 @@ RewriteRule ^admin/rombel/update/$ on-admin/rombel-update.php
 RewriteRule ^admin/sikap$ on-admin/sikap.php
 RewriteRule ^admin/sikap/$ on-admin/sikap.php
 
+RewriteRule ^admin/sikap/add$ on-admin/sikap-add.php
+RewriteRule ^admin/sikap/add/$ on-admin/sikap-add.php
+
 
 RewriteRule ^admin/ekstra$ on-admin/ekstra.php
 RewriteRule ^admin/ekstra/$ on-admin/ekstra.php
@@ -119,13 +122,13 @@ RewriteRule ^admin/ekstra/$ on-admin/ekstra.php
 
 ## ON-SISWA
 RewriteRule ^student/profil$ on-siswa/profile.php
-RewriteRule ^student/profil/$ on-siswa/profile.php 
+RewriteRule ^student/profil/$ on-siswa/profile.php
 
 RewriteRule ^student/jadwal$ on-siswa/schedule.php
-RewriteRule ^student/jadwal/$ on-siswa/schedule.php 
+RewriteRule ^student/jadwal/$ on-siswa/schedule.php
 
 RewriteRule ^student/nilai$ on-siswa/grade.php
-RewriteRule ^student/nilai/$ on-siswa/grade.php 
+RewriteRule ^student/nilai/$ on-siswa/grade.php
 
 ErrorDocument 404 /404.php
 </IfModule>
