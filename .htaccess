@@ -1,0 +1,141 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks -MultiViews -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^admin$ on-admin/index.php
+RewriteRule ^admin/$ on-admin/index.php
+
+RewriteRule ^student$ on-siswa/index.php
+RewriteRule ^student/$ on-siswa/index.php
+
+RewriteRule ^guru$ on-guru/index.php
+RewriteRule ^guru/$ on-guru/index.php
+
+RewriteRule ^admin/student$ on-admin/siswa.php
+RewriteRule ^admin/student/$ on-admin/siswa.php
+
+RewriteRule ^admin/student/add$ on-admin/siswa-add.php
+RewriteRule ^admin/student/add/$ on-admin/siswa-add.php
+
+RewriteRule ^admin/student/view$ on-admin/siswa-detail.php
+RewriteRule ^admin/student/view/$ on-admin/siswa-detail.php
+
+RewriteRule ^admin/student/update$ on-admin/siswa-edit.php
+RewriteRule ^admin/student/update/$ on-admin/siswa-edit.php 
+
+RewriteRule ^admin/student/export-xls$ on-admin/siswa-exportxls.php
+RewriteRule ^admin/student/export-xls/$ on-admin/siswa-exportxls.php 
+
+RewriteRule ^admin/student/import-xls$ on-admin/siswa-importxls.php
+RewriteRule ^admin/student/import-xls/$ on-admin/siswa-importxls.php
+
+RewriteRule ^admin/teacher$ on-admin/guru.php
+RewriteRule ^admin/teacher/$ on-admin/guru.php
+
+RewriteRule ^admin/teacher/add$ on-admin/guru-add.php
+RewriteRule ^admin/teacher/add/$ on-admin/guru-add.php
+
+RewriteRule ^admin/teacher/profile$ on-admin/guru-detail.php
+RewriteRule ^admin/teacher/profile/$ on-admin/guru-detail.php
+
+RewriteRule ^admin/teacher/update$ on-admin/guru-edit.php
+RewriteRule ^admin/teacher/update/$ on-admin/guru-edit.php
+
+RewriteRule ^admin/teacher/import$ on-admin/guru-importxls.php
+RewriteRule ^admin/teacher/import/$ on-admin/guru-importxls.php
+
+RewriteRule ^admin/teacher/export$ on-admin/guru-exportxls.php
+RewriteRule ^admin/teacher/export/$ on-admin/guru-exportxls.php
+
+RewriteRule ^admin/data-sekolah$ on-admin/data-sekolah.php
+RewriteRule ^admin/data-sekolah/$ on-admin/data-sekolah.php
+
+RewriteRule ^admin/data-rapor$ on-admin/data-rapor.php
+RewriteRule ^admin/data-rapor/$ on-admin/data-rapor.php
+
+RewriteRule ^admin/users$ on-admin/users.php
+RewriteRule ^admin/users/$ on-admin/users.php
+
+RewriteRule ^admin/kelas$ on-admin/kelas.php
+RewriteRule ^admin/kelas/$ on-admin/kelas.php
+
+RewriteRule ^admin/kelas/add$ on-admin/kelas-add.php
+RewriteRule ^admin/kelas/add/$ on-admin/kelas-add.php
+
+RewriteRule ^admin/kelas-siswa$ on-admin/data-kelas-siswa.php
+RewriteRule ^admin/kelas-siswa/$ on-admin/data-kelas-siswa.php
+
+RewriteRule ^admin/kalender-akademik$ on-admin/set-calendar.php
+RewriteRule ^admin/kalender-akademik/$ on-admin/set-calendar.php
+
+RewriteRule ^admin/mapel$ on-admin/mapel.php
+RewriteRule ^admin/mapel/$ on-admin/mapel.php
+
+RewriteRule ^admin/mapel/add$ on-admin/mapel-add.php
+RewriteRule ^admin/mapel/add/$ on-admin/mapel-add.php
+
+RewriteRule ^admin/mapel/update$ on-admin/mapel-update.php
+RewriteRule ^admin/mapel/update/$ on-admin/mapel-update.php
+
+RewriteRule ^admin/rombel$ on-admin/rombel.php
+RewriteRule ^admin/rombel/$ on-admin/rombel.php
+
+RewriteRule ^admin/rombel/anggota$ on-admin/rombel-anggota.php
+RewriteRule ^admin/rombel/anggota/$ on-admin/rombel-anggota.php
+
+RewriteRule ^admin/rombel/add$ on-admin/rombel-add.php
+RewriteRule ^admin/rombel/add/$ on-admin/rombel-add.php
+
+RewriteRule ^admin/rombel/update$ on-admin/rombel-update.php
+RewriteRule ^admin/rombel/update/$ on-admin/rombel-update.php
+
+RewriteRule ^admin/sikap$ on-admin/sikap.php
+RewriteRule ^admin/sikap/$ on-admin/sikap.php
+
+
+RewriteRule ^admin/ekstra$ on-admin/ekstra.php
+RewriteRule ^admin/ekstra/$ on-admin/ekstra.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ON-SISWA
+RewriteRule ^student/profil$ on-siswa/profile.php
+RewriteRule ^student/profil/$ on-siswa/profile.php 
+
+RewriteRule ^student/jadwal$ on-siswa/schedule.php
+RewriteRule ^student/jadwal/$ on-siswa/schedule.php 
+
+RewriteRule ^student/nilai$ on-siswa/grade.php
+RewriteRule ^student/nilai/$ on-siswa/grade.php 
+
+ErrorDocument 404 /404.php
+</IfModule>
+
+<Files ".*">
+Order allow,deny
+Deny from all
+</Files>
+
+<Files "php.ini">
+Order allow,deny
+Deny from all
+</Files>
