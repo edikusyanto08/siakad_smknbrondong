@@ -34,20 +34,20 @@ include "_header.php";
         </div>
         <div class="box-body">
           <form class="form form-horizontal" method="POST">
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="kelas">KELAS</label>
-            <div class="col-md-5">
-            <input type="text" name="kelas" id="kelas" class="col-md-5 form-control" placeholder="Nama Kelas" aria-describedby="helpId" autofocus="">
-            <small id="helpId" class="text-muted">Isikan Nama kelas</small>
-          </div>
-          </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="kelas">KELAS</label>
+              <div class="col-md-5">
+                <input type="text" name="kelas" id="kelas" class="col-md-5 form-control" placeholder="Nama Kelas" aria-describedby="helpId" autofocus="">
+                <small id="helpId" class="text-muted">Isikan Nama kelas</small>
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for=""></label>
-            <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+            <div class="form-group">
+              <label for=""></label>
+              <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
               class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Help text</small>
-          </div>
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
           </form>
         </div>
         <!-- /.box-body -->
@@ -58,7 +58,7 @@ include "_header.php";
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  
+
   <?php
   include "_footer.php";
   ?>

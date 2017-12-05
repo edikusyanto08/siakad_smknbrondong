@@ -30,7 +30,7 @@ include "config.php";
     </div><!-- /.login-logo -->
     <div class="login-box-body">
       <p class="login-box-msg"><b>SISTEM INFORMASI NILAI SISWA</b><br/>SMK Negeri 1 Brondong</p>
-      <p align="center" style="color: #CC0000;"><?php 
+      <p align="center" style="color: #CC0000;"><?php
       if (isset($_REQUEST['error'])){
         print "<i class='fa fa-exclamation'></i>   Username dan password tidak cocok!" ;
       }
@@ -51,7 +51,7 @@ include "config.php";
         </div>
       </form>
 
-      <center><h5 class="form-signin">Copyright &copy; 2017 <a href="http://smkn1brondong.sch.id" target="_blank">SMK Negeri 1 Brondong</a></h5></center> 
+      <center><h5 class="form-signin">Copyright &copy; 2017 <a href="http://smkn1brondong.sch.id" target="_blank">SMK Negeri 1 Brondong</a></h5></center>
 
     </div><!-- /.login-box-body -->
   </div><!-- /.login-box -->
